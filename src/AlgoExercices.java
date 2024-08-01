@@ -8,6 +8,7 @@ public class AlgoExercices extends JFrame {
     private JTextArea displayArea;
 
     public AlgoExercices() {
+
         // Configurer la fenêtre principale
         setTitle("Exercices d'Algorithmes corrigés");
         setSize(600, 400);
@@ -148,7 +149,7 @@ public class AlgoExercices extends JFrame {
                 "\n" +
                 "Lire prénom\n" +
                 "\n" +
-                "Afficher \"Bonjour \" prénom \"votre nom est \" nom.\n" +
+                "Afficher \"Bonjour \" prénom \" \" nom.\n" +
                 "\nFin";
         displayArea.setText(pseudoCode);
     }
@@ -275,7 +276,7 @@ public class AlgoExercices extends JFrame {
         String nom = JOptionPane.showInputDialog(this, "Entrez votre nom :");
         String prenom = JOptionPane.showInputDialog(this, "Entrez votre prénom :");
         if (nom != null && !nom.isEmpty() && prenom != null && !prenom.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Bonjour " + prenom + ", votre nom est " + nom + ".");
+            JOptionPane.showMessageDialog(this, "Bonjour " + prenom + " " + nom + ".");
         }
     }
 
